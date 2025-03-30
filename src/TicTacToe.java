@@ -53,6 +53,7 @@ public class TicTacToe {
     }
 
     private static void displayBoard() {
+        System.out.println();
         for (int i = 0; i < ROWS; i++) {
             for (int j = 0; j < COLS; j++) {
                 System.out.print(board[i][j] + (j < COLS - 1 ? "|" : ""));
@@ -62,7 +63,9 @@ public class TicTacToe {
                 System.out.println("-----");
             }
         }
+        System.out.println();
     }
+
 
     private static boolean isValidMove(int row, int col) {
         return board[row][col].equals(" ");
